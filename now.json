@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "name": "api",
+  "public": true,
+  "builds": [
+    { "src": "index.js", "use": "@now/node" },
+    { "src": "data.json", "use": "@now/static" }
+  ]
+}
