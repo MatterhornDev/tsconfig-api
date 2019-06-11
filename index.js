@@ -8,7 +8,7 @@ module.exports = (req, res) => {
       res.end(`I'm running :-)\n`)
       break
     case `/data`:
-      res.end(JSON.stringify(tsconfigData[query.option]))
+      res.end(JSON.stringify(data[query.option]))
       break
     default:
       res.end(`Bad route\n`)
