@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "name": "api",
-  "public": true,
+  "name": "experimental-tsconfig-api",
   "builds": [
-    { "src": "index.js", "use": "@now/node" },
-    { "src": "data.json", "use": "@now/static" }
+    { "src": "./src/**/*.ts", "use": "@now/node@canary" },
+    { "src": "./src/tsconfig-data.json", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "/tsconfig", "dest": "/src/tsconfig.ts" },
+    { "src": "/.*", "dest": "/src/index.ts" }
   ]
 }

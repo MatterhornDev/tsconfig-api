@@ -1,19 +1,21 @@
 {
   "name": "tsconfig-api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "A microservice for getting information on tsconfig options",
   "scripts": {
-    "start": "micro",
-    "dev": "micro-dev"
+    "build": "tsc data/createData.ts --strict --esModuleInterop",
+    "create-data": "node data/createData.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "nodejs",
+    "microservice"
+  ],
+  "author": "Ethan Arrowood",
+  "license": "MIT",
   "dependencies": {
-    "micro": "^9.3.4"
-  },
-  "devDependencies": {
-    "micro-dev": "^3.0.0"
+    "@types/node": "^12.0.8",
+    "typescript": "^3.5.1"
   }
 }
