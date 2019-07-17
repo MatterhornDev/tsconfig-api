@@ -6,11 +6,12 @@ export interface Handler {
 
 export interface tsconfigData {
   [k: string]: {
-    cliOption: null | string | string[],
-    type: string | string[],
+    cliFlag: null | string | string[],
     defaultValue: string | string[],
     description: string,
+    extendedDescription: string,
     experimental: boolean,
-    configOnly: boolean
+    refLinks: { title: string, link: string }[]
+    type: string | string[],
   }
 }
