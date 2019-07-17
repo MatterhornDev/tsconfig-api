@@ -1,50 +1,36 @@
 import http from 'http'
 import url from 'url'
 import _data from './tsconfig-data.json'
-
-const ERRORS = {
-  ERR_OPTION_IS_LIST: {
-    error: 'Query parameter `option` should not be a list'
-  },
-  ERR_NO_OPTION_PARAM: {
-    error: 'missing `option` query parameter'
-  },
-  ERR_NO_REQ_URL: {
-    error: 'Request object did not contain a URL'
-  }
-}
-
-interface tsconfigData {
-  [k: string]: {
-    cliOption: null | string | string[],
-    type: string | string[],
-    defaultValue: string | string[],
-    description: string,
-    experimental: boolean,
-    configOnly: boolean
-  }
-}
+import helper from './helper'
+import { tsconfigData } from '../types/tsconfig-api'
+import { ERR_NO_OPTION_PARAM, ERR_OPTION_IS_LIST, ERR_OPTION_DOES_NOT_EXIST } from './errors'
 
 const data: tsconfigData = _data
 
 const handler = (req: http.IncomingMessage, res: http.ServerResponse) => {
-  if (req.url !== undefined) {
-    const parsedUrl = url.parse(req.url, true)
-    const query = parsedUrl.query
-    if (Object.prototype.hasOwnProperty.call(query, `option`)) {
-      const option = query.option
-      if (!Array.isArray(option)) {
-        res.writeHead(200, { 'Content-Type': 'application/json' })
-        res.end(JSON.stringify(data[option]))
+  const parsedUrl = url.parse(req.url as string, true) // req.url is validated as not-undefined in the helper wrapper
+
+  // the query object does not inherit usual JS Object prototype methods https://github.com/nodejs/node/pull/6289
+  // instead use prototype .call to check for existence of option property
+  if (Object.prototype.hasOwnProperty.call(parsedUrl.query, `option`)) {
+    const { query: { option } } = parsedUrl
+    if (!Array.isArray(option) && option.indexOf(',') !== -1) {
+      const prop = data[option]
+      if (prop === undefined) {
+        res.writeHead(400, { 'Content-Type': 'text/plain' })
+        res.end(ERR_OPTION_DOES_NOT_EXIST.error)
       } else {
-        res.end(JSON.stringify(ERRORS.ERR_OPTION_IS_LIST))
+        res.writeHead(200, { 'Content-Type': 'application/json' })
+        res.end(JSON.stringify(prop))
       }
     } else {
-      res.end(JSON.stringify(ERRORS.ERR_NO_OPTION_PARAM))
+      res.writeHead(400, { 'Content-Type': 'text/plain' })
+      res.end(ERR_OPTION_IS_LIST.error)
     }
   } else {
-    res.end(JSON.stringify(ERRORS.ERR_NO_REQ_URL))
+    res.writeHead(400, { 'Content-Type': 'text/plain' })
+    res.end(ERR_NO_OPTION_PARAM.error)
   }
 }
 
-export default handler
+export default helper(handler)
