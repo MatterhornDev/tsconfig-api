@@ -14,7 +14,8 @@ const handler = (req: http.IncomingMessage, res: http.ServerResponse) => {
   // instead use prototype .call to check for existence of option property
   if (Object.prototype.hasOwnProperty.call(parsedUrl.query, `option`)) {
     const { query: { option } } = parsedUrl
-    if (!Array.isArray(option) && option.indexOf(',') !== -1) {
+    console.log(option.indexOf(','))
+    if (!Array.isArray(option) && option.indexOf(',') === -1) {
       const prop = data[option]
       if (prop === undefined) {
         res.writeHead(400, { 'Content-Type': 'text/plain' })
