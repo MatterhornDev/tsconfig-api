@@ -8,7 +8,7 @@
   "routes": [
     { "src": "/tsconfig", "dest": "/src/tsconfig.ts" },
     { "src": "/tsconfig/defaults", "dest": "/src/tsconfig-defaults.ts" },
-    { "src": "/tsconfig/keys", "dest": "/src/tsconfig-keys.ts" },
+    { "src": "/tsconfig/options", "dest": "/src/tsconfig-options.ts" },
     { "src": "/.*", "dest": "/src/index.ts" }
   ]
 }

@@ -1,6 +1,7 @@
 import { IncomingMessage, ServerResponse } from 'http'
 import { ERR_NO_REQ_URL } from './errors'
-import { Handler } from '../types/tsconfig-api'
+
+type Handler = (req: IncomingMessage, res: ServerResponse) => void
 
 //Wrap API microservices in a req.url check as well as setting the CORS header Access-Control-Allow-Origin to *
 const helper = (handler: Handler) => {

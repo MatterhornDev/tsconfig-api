@@ -224,16 +224,7 @@
     "description": "Output directory for generated declaration files.",
     "experimental": false,
     "extendedDescription": "Specify a directory output for declaration (.d.ts) files. This must be used in conjunction with `declaration`. It will override the output directory specified by `outDir`",
-    "refLinks": [
-      {
-        "title": "",
-        "link": ""
-      },
-      {
-        "title": "",
-        "link": ""
-      }
-    ]
+    "refLinks": []
   },
   "declarationMap": {
     "cliFlag": "--declarationMap",
@@ -241,15 +232,11 @@
     "defaultValue": "false",
     "description": "Generates a sourcemap for each corresponding '.d.ts' file.",
     "experimental": false,
-    "extendedDescription": "",
+    "extendedDescription": "This compiler option must be enabled along side `--declaration` and will cause the compiler to emit `.d.ts.map` files alongside the output of the `.d.ts` files. This is useful for developer tooling integration such as the go-to-definition feature in VS Code.",
     "refLinks": [
       {
-        "title": "",
-        "link": ""
-      },
-      {
-        "title": "",
-        "link": ""
+        "title": "TypeScript Handbook - TypeScript 2.9 - New --declarationMap",
+        "link": "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-9.html"
       }
     ]
   },
@@ -259,17 +246,8 @@
     "defaultValue": "false",
     "description": "Show diagnostic information.",
     "experimental": false,
-    "extendedDescription": "",
-    "refLinks": [
-      {
-        "title": "",
-        "link": ""
-      },
-      {
-        "title": "",
-        "link": ""
-      }
-    ]
+    "extendedDescription": "Not much information exists for this option. It should output detailed information about the compiler and the build output.",
+    "refLinks": []
   },
   "disableSizeLimit": {
     "cliFlag": "--disableSizeLimit",
@@ -277,15 +255,11 @@
     "defaultValue": "false",
     "description": "Disable size limitation on JavaScript project.",
     "experimental": false,
-    "extendedDescription": "",
+    "extendedDescription": "The TypeScript compiler will only load a maximum of 20MB non-typescript files into a project. A `Too many JavaScript files in the project.` error will pop up and recommend either using the `exclude` setting or this `disableSizeLimit` compiler option setting.",
     "refLinks": [
       {
-        "title": "",
-        "link": ""
-      },
-      {
-        "title": "",
-        "link": ""
+        "title": "TypeScript GitHub Issue #7444 that introduced this option.",
+        "link": "https://github.com/Microsoft/TypeScript/issues/7444#issuecomment-197064666"
       }
     ]
   },
@@ -295,15 +269,19 @@
     "defaultValue": "false",
     "description": "Provide full support for iterables in for..of, spread and destructuring when targeting ES5 or ES3.",
     "experimental": false,
-    "extendedDescription": "",
+    "extendedDescription": "The `downlevelIteration` flag enables full support for generators and the Iterator protocol for ES3 and ES5 projects. Without this option, generators and the Iterator protocol were only supported if the project `target` was ES6/ES2015 or later. This requires a native `Symbol.iterator` or `Symbol.iterator` shim at runtime for any non-array values. The second reference link _Downlevel Iteration for ES3/ES5 in TypeScript_ provides a wonderful breakdown of this property and exactly how it transforms your TypeScript code.",
     "refLinks": [
       {
-        "title": "",
-        "link": ""
+        "title": "TypeScript Handbook - TypeScript 2.3 - New --downlevelIteration",
+        "link": "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-3.html#new---downleveliteration"
       },
       {
-        "title": "",
-        "link": ""
+        "title": "Downlevel Iteration for ES3/ES5 in TypeScript",
+        "link": "https://mariusschulz.com/blog/downlevel-iteration-for-es3-es5-in-typescript"
+      },
+      {
+        "title": "MDN - Iteration Protocols",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols"
       }
     ]
   },
@@ -313,15 +291,15 @@
     "defaultValue": "false",
     "description": "Emit a UTF-8 Byte Order Mark (BOM) in the beginning of output files.",
     "experimental": false,
-    "extendedDescription": "",
+    "extendedDescription": "Adds the \"\\uFEFF\" to the start of all output files. This mark is called a Byte Order Mark (BOM) and is an adstract character used to declare and recognize Unicode encoding of a text file. Node.js specifically detecs the \"\\uFEFF\" at the start of the string and replaces it with the actual BOM from the specified encoding.",
     "refLinks": [
       {
-        "title": "",
-        "link": ""
+        "title": "Byte Order Mark",
+        "link": "https://simple.wikipedia.org/wiki/Byte_order_mark"
       },
       {
-        "title": "",
-        "link": ""
+        "title": "sys.ts code reference",
+        "link": "https://github.com/microsoft/TypeScript/blob/70b7bd5a1b8c3bc1ba7c644b37412368607706e6/src/compiler/sys.ts#L639-L641"
       }
     ]
   },
@@ -331,15 +309,11 @@
     "defaultValue": "false",
     "description": "Only emit '.d.ts' declaration files.",
     "experimental": false,
-    "extendedDescription": "",
+    "extendedDescription": "This option will not emit JavaScript files from the build output. It will only emit `.d.ts` type definition files. This option pairs well with alternate compilation configurations such as a Babel 7.",
     "refLinks": [
       {
-        "title": "",
-        "link": ""
-      },
-      {
-        "title": "",
-        "link": ""
+        "title": "TypeScript - Announcing TypeScrip 2.8.2 - Declaration-only emit",
+        "link": "https://devblogs.microsoft.com/typescript/announcing-typescript-2-8-2/#declaration-only-emit"
       }
     ]
   },
@@ -347,17 +321,17 @@
     "cliFlag": "--emitDecoratorMetadata",
     "type": "boolean",
     "defaultValue": "false",
-    "description": "Emit design-type metadata for decorated declarations in source. See [issue #2577](https://github.com/Microsoft/TypeScript/issues/2577) for details.",
+    "description": "Emit design-type metadata for decorated declarations in source.",
     "experimental": true,
-    "extendedDescription": "",
+    "extendedDescription": "This option is included in TypeScript for emitting certain types of metadata for declarations that have decorators. Enable this with the `--experimentalDecorators` flag or a `--target` version that supports the decorator protocol. This metadata is best used with the `reflect-metadata` library which adds a polyfill for an experimental metadata API. This option is experimental until metadata is adopted in ECMAScript standard.",
     "refLinks": [
       {
-        "title": "",
-        "link": ""
+        "title": "Emit serialized design-time type metadata for decorators",
+        "link": "https://github.com/Microsoft/TypeScript/issues/2577"
       },
       {
-        "title": "",
-        "link": ""
+        "title": "Reflect Metadata",
+        "link": "https://github.com/rbuckton/reflect-metadata"
       }
     ]
   },
