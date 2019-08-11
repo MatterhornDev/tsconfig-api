@@ -61,7 +61,7 @@
     "cliFlag": "--allowUnreachableCode",
     "defaultValue": "false",
     "description": "Do not report errors on unreachable code.",
-    "extendedDescription": "With this option enabled, the following code snippet will not yield any compilation errors ```typescript\nconst fn = () => {\n  if (true) {\n    return 'reachable'\n  } else {\n    return 'also reachable'\n  }\n  return 'totally unreachable'\n}\n```",
+    "extendedDescription": "With this option enabled, the following code snippet will not yield any compilation errors \n```typescript\nconst fn = () => {\n  if (true) {\n    return 'reachable'\n  } else {\n    return 'also reachable'\n  }\n  return 'totally unreachable'\n}\n```",
     "refLinks": [
       {
         "title": "TypeScript 1.8 - Unreachable code",
@@ -75,7 +75,7 @@
     "cliFlag": "--allowUnusedLabels",
     "defaultValue": "false",
     "description": "Do not report errors on unused labels.",
-    "extendedDescription": "A perceptively unknown, or rarely used JavaScript feature is a labeled statement. It is used with `break` or `continue` statements in loop operations. The `allowUnusedLabels` flag enables TypeScript to not report errors when a label is unused such as in the following code snippet: ```typescript\nloop: while(x < 10) {\n  x++\n}\n```",
+    "extendedDescription": "A perceptively unknown, or rarely used JavaScript feature is a labeled statement. It is used with `break` or `continue` statements in loop operations. The `allowUnusedLabels` flag enables TypeScript to not report errors when a label is unused such as in the following code snippet: \n```typescript\nloop: while(x < 10) {\n  x++\n}\n```",
     "refLinks": [
       {
         "title": "TypeScript 1.8 - Unused labels",
@@ -118,15 +118,15 @@
     "extendedDescription": "When using Asynchronous Module Definitions, it is common practice to use a `baseUrl` when using Asynchronous Module Definitions (AMD). This compiler option informs the compiler where to find modules. All module imports with non-relative names are assumed to be relative to the `baseUrl`. Relative module imports are not impacted by setting the baseUrl. For more information on baseUrl and AMD, visit the documentation in the references section.",
     "refLinks": [
       {
-        "type": "TypeScript Handbook - Module Resolution - Base URL",
+        "title": "TypeScript Handbook - Module Resolution - Base URL",
         "link": "https://www.typescriptlang.org/docs/handbook/module-resolution.html#base-url"
       },
       {
-        "type": "RequireJS - Why AMD?",
+        "title": "RequireJS - Why AMD?",
         "link": "https://requirejs.org/docs/whyamd.html"
       },
       {
-        "type": "RequireJS API - Configuration Options - baseUrl",
+        "title": "RequireJS API - Configuration Options - baseUrl",
         "link": "https://requirejs.org/docs/api.html#config-baseUrl"
       }
     ],
@@ -341,15 +341,19 @@
     "defaultValue": "false",
     "description": "Emit __importStar and __importDefault helpers for runtime babel ecosystem compatibility and enable --allowSyntheticDefaultImports for typesystem compatibility.",
     "experimental": false,
-    "extendedDescription": "",
+    "extendedDescription": "The `--esModuleInterop` flag enables more babel like import styles. Technically, it updates CommonJS/AMD/UMD modules emit to syntehsize namespace records based on the presence of an __esModule indicator. This will slightly change how modules are imported. Firstly, namespace imports `import * as foo from 'foo'` is now uncallable (i.e. `foo()` is considered invalid). Secondly, default imports are now allowed (`import fs from 'fs'`) and will work as expected. Keep in mind that if the compiler option `module` is set to `es2015` you'll also need to enable the `allowSyntheticDefaultImports` option aswell.",
     "refLinks": [
       {
-        "title": "",
-        "link": ""
+        "title": "TypeScript Handbook - TypeScript 2.7",
+        "link": "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-7.html#support-for-import-d-from-cjs-from-commonjs-modules-with---esmoduleinterop"
       },
       {
-        "title": "",
-        "link": ""
+        "title": "StackOverflow esModuleInterop flag",
+        "link": "https://stackoverflow.com/questions/48785451/is-there-a-way-to-use-esmoduleinterop-in-tsconfig-as-opposed-to-it-being-a-fla"
+      },
+      {
+        "title": "Great Import Schism: TypeScript confusion around imports explained",
+        "link": "https://itnext.io/great-import-schism-typescript-confusion-around-imports-explained-d512fc6769c2"
       }
     ]
   },
@@ -359,15 +363,15 @@
     "defaultValue": "false",
     "description": "Enables experimental support for ES decorators.",
     "experimental": true,
-    "extendedDescription": "",
+    "extendedDescription": "This flag will enable the use of the decorators within your TypeScript project. The Decorators Proposal is currently at Stage 2, but is supported by TypeScript. Learn more about using decorators in the resources below. The `target` version must be atleast `ES5`.",
     "refLinks": [
       {
-        "title": "",
-        "link": ""
+        "title": "TC39 - Decorators Proposal",
+        "link": "https://github.com/tc39/proposal-decorators"
       },
       {
-        "title": "",
-        "link": ""
+        "title": "TypeScript Handbook - Decorators",
+        "link": "https://www.typescriptlang.org/docs/handbook/decorators.html"
       }
     ]
   },
@@ -377,17 +381,8 @@
     "defaultValue": "false",
     "description": "Show verbose diagnostic information",
     "experimental": false,
-    "extendedDescription": "",
-    "refLinks": [
-      {
-        "title": "",
-        "link": ""
-      },
-      {
-        "title": "",
-        "link": ""
-      }
-    ]
+    "extendedDescription": "This option displays various diagnostic information about a build including timings, memory used, and other metrics such as the number of files, symbols, and types.",
+    "refLinks": []
   },
   "forceConsistentCasingInFileNames": {
     "cliFlag": "--forceConsistentCasingInFileNames",
@@ -395,15 +390,11 @@
     "defaultValue": "false",
     "description": "Disallow inconsistently-cased references to the same file.",
     "experimental": false,
-    "extendedDescription": "",
+    "extendedDescription": "Thie option will detect case-sensitive import issues at compile time. According to a blog post import statements are case-insensitive on Mac and Windows, but are case-sensitive on Linux. This inconsistency can cause issues when using speficic libraries.",
     "refLinks": [
       {
-        "title": "",
-        "link": ""
-      },
-      {
-        "title": "",
-        "link": ""
+        "title": "Case Sensitive Import Statements in Typescript - Brian De Sousa",
+        "link": "https://briandesousa.net/2019/02/08/case-sensitive-import-statements-in-typescript/"
       }
     ]
   },
@@ -416,17 +407,8 @@
     "defaultValue": "",
     "description": "Print help message.",
     "experimental": false,
-    "extendedDescription": "",
-    "refLinks": [
-      {
-        "title": "",
-        "link": ""
-      },
-      {
-        "title": "",
-        "link": ""
-      }
-    ]
+    "extendedDescription": "This is a command line interface only option. It will display a shorter list of available compiler options with their shortened descriptions.",
+    "refLinks": []
   },
   "importHelpers": {
     "cliFlag": "--importHelpers",
