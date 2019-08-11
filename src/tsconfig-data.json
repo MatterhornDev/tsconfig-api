@@ -1,1 +1,1600 @@
-{"allowJs":{"cliOption":"--allowJs","type":"boolean","defaultValue":"false","description":"Allow JavaScript files to be compiled.","experimental":false,"configOnly":false},"allowSyntheticDefaultImports":{"cliOption":"--allowSyntheticDefaultImports","type":"boolean","defaultValue":"module === \"system\" or --esModuleInterop","description":"Allow default imports from modules with no default export. This does not affect code emit, just typechecking.","experimental":false,"configOnly":false},"allowUmdGlobalAccess":{"cliOption":"--allowUmdGlobalAccess","type":"boolean","defaultValue":"false","description":"Allow accessing UMD globals from modules.","experimental":false,"configOnly":false},"allowUnreachableCode":{"cliOption":"--allowUnreachableCode","type":"boolean","defaultValue":"false","description":"Do not report errors on unreachable code.","experimental":false,"configOnly":false},"allowUnusedLabels":{"cliOption":"--allowUnusedLabels","type":"boolean","defaultValue":"false","description":"Do not report errors on unused labels.","experimental":false,"configOnly":false},"alwaysStrict":{"cliOption":"--alwaysStrict","type":"boolean","defaultValue":"false","description":"Parse in strict mode and emit \"use strict\" for each source file","experimental":false,"configOnly":false},"baseUrl":{"cliOption":"--baseUrl","type":"string","defaultValue":"","description":"Base directory to resolve non-relative module names. See [Module Resolution documentation](./Module%20Resolution.md) for more details.","experimental":false,"configOnly":false},"build":{"cliOption":["--build","-b"],"type":"boolean","defaultValue":"false","description":"Builds this project and all of its dependencies specified by [Project References](./Project%20References.md). Note that this flag is not compatible with others on this page. See more [here](./project-references.md)","experimental":false,"configOnly":false},"charset":{"cliOption":"--charset","type":"string","defaultValue":"\"utf8\"","description":"The character set of the input files.","experimental":false,"configOnly":false},"checkJs":{"cliOption":"--checkJs","type":"boolean","defaultValue":"false","description":"Report errors in .js files. Use in conjunction with --allowJs.","experimental":false,"configOnly":false},"composite":{"cliOption":"--composite","type":"boolean","defaultValue":"true","description":"Ensure TypeScript can determine where to find the outputs of the referenced project to compile project.","experimental":false,"configOnly":false},"declaration":{"cliOption":["--declaration","-d"],"type":"boolean","defaultValue":"false","description":"Generates corresponding .d.ts file.","experimental":false,"configOnly":false},"declarationDir":{"cliOption":"--declarationDir","type":"string","defaultValue":"","description":"Output directory for generated declaration files.","experimental":false,"configOnly":false},"declarationMap":{"cliOption":"--declarationMap","type":"boolean","defaultValue":"false","description":"Generates a sourcemap for each corresponding '.d.ts' file.","experimental":false,"configOnly":false},"diagnostics":{"cliOption":"--diagnostics","type":"boolean","defaultValue":"false","description":"Show diagnostic information.","experimental":false,"configOnly":false},"disableSizeLimit":{"cliOption":"--disableSizeLimit","type":"boolean","defaultValue":"false","description":"Disable size limitation on JavaScript project.","experimental":false,"configOnly":false},"downlevelIteration":{"cliOption":"--downlevelIteration","type":"boolean","defaultValue":"false","description":"Provide full support for iterables in for..of, spread and destructuring when targeting ES5 or ES3.","experimental":false,"configOnly":false},"emitBOM":{"cliOption":"--emitBOM","type":"boolean","defaultValue":"false","description":"Emit a UTF-8 Byte Order Mark (BOM) in the beginning of output files.","experimental":false,"configOnly":false},"emitDeclarationOnly":{"cliOption":"--emitDeclarationOnly","type":"boolean","defaultValue":"false","description":"Only emit '.d.ts' declaration files.","experimental":false,"configOnly":false},"emitDecoratorMetadata":{"cliOption":"--emitDecoratorMetadata","type":"boolean","defaultValue":"false","description":"Emit design-type metadata for decorated declarations in source. See [issue #2577](https://github.com/Microsoft/TypeScript/issues/2577) for details.","experimental":true,"configOnly":false},"esModuleInterop":{"cliOption":"--esModuleInterop","type":"boolean","defaultValue":"false","description":"Emit __importStar and __importDefault helpers for runtime babel ecosystem compatibility and enable --allowSyntheticDefaultImports for typesystem compatibility.","experimental":false,"configOnly":false},"experimentalDecorators":{"cliOption":"--experimentalDecorators","type":"boolean","defaultValue":"false","description":"Enables experimental support for ES decorators.","experimental":true,"configOnly":false},"extendedDiagnostics":{"cliOption":"--extendedDiagnostics","type":"boolean","defaultValue":"false","description":"Show verbose diagnostic information","experimental":false,"configOnly":false},"forceConsistentCasingInFileNames":{"cliOption":"--forceConsistentCasingInFileNames","type":"boolean","defaultValue":"false","description":"Disallow inconsistently-cased references to the same file.","experimental":false,"configOnly":false},"help":{"cliOption":["--help","-h"],"type":"cli operation","defaultValue":"","description":"Print help message.","experimental":false,"configOnly":false},"importHelpers":{"cliOption":"--importHelpers","type":"boolean","defaultValue":"false","description":"Import emit helpers (e.g. __extends, __rest, etc..) from [tslib](https://www.npmjs.com/package/tslib)","experimental":false,"configOnly":false},"incremental":{"cliOption":"--incremental","type":"boolean","defaultValue":"true if composite is on, false otherwise","description":"Enable incremental compilation by reading/writing information from prior compilations to a file on disk. This file is controlled by the --tsBuildInfoFile flag.","experimental":false,"configOnly":false},"inlineSourceMap":{"cliOption":"--inlineSourceMap","type":"boolean","defaultValue":"false","description":"Emit a single file with source maps instead of having a separate file.","experimental":false,"configOnly":false},"inlineSources":{"cliOption":"--inlineSources","type":"boolean","defaultValue":"false","description":"Emit the source alongside the sourcemaps within a single file; requires --inlineSourceMap or --sourceMap to be set.","experimental":false,"configOnly":false},"init":{"cliOption":"--init","type":"cli operation","defaultValue":"","description":"Initializes a TypeScript project and creates a tsconfig.json file.","experimental":false,"configOnly":false},"isolatedModules":{"cliOption":"--isolatedModules","type":"boolean","defaultValue":"false","description":"Transpile each file as a separate module (similar to \"ts.transpileModule\").","experimental":false,"configOnly":false},"jsx":{"cliOption":"--jsx","type":"string","defaultValue":"\"preserve\"","description":"Support JSX in .tsx files: \"react\", \"preserve\", \"react-native\". See [JSX](./JSX.md).","experimental":false,"configOnly":false},"jsxFactory":{"cliOption":"--jsxFactory","type":"string","defaultValue":"\"React.createElement\"","description":"Specify the JSX factory function to use when targeting react JSX emit, e.g. React.createElement or h.","experimental":false,"configOnly":false},"keyofStringsOnly":{"cliOption":"--keyofStringsOnly","type":"boolean","defaultValue":"false","description":"Resolve keyof to string valued property names only (no numbers or symbols).","experimental":false,"configOnly":false},"lib":{"cliOption":"--lib","type":"string[]","defaultValue":"","description":"List of library files to be included in the compilation.<br/>Possible values are:  <br/>► ES5 <br/>► ES6 <br/>► ES2015 <br/>► ES7 <br/>► ES2016 <br/>► ES2017  <br/>► ES2018 <br/>► ESNext <br/>► DOM <br/>► DOM.Iterable <br/>► WebWorker <br/>► ScriptHost <br/>► ES2015.Core <br/>► ES2015.Collection <br/>► ES2015.Generator <br/>► ES2015.Iterable <br/>► ES2015.Promise <br/>► ES2015.Proxy <br/>► ES2015.Reflect <br/>► ES2015.Symbol <br/>► ES2015.Symbol.WellKnown <br/>► ES2016.Array.Include <br/>► ES2017.object <br/>► ES2017.Intl <br/>► ES2017.SharedMemory <br/>► ES2017.String <br/>► ES2017.TypedArrays <br/>► ES2018.Intl <br/>► ES2018.Promise <br/>► ES2018.RegExp <br/>► ESNext.AsyncIterable <br/>► ESNext.Array <br/>► ESNext.Intl <br/>► ESNext.Symbol <br/><br/> Note: If --lib is not specified a default list of libraries are injected. The default libraries injected are:  <br/> ► For --target ES5: DOM,ES5,ScriptHost<br/>  ► For --target ES6: DOM,ES6,DOM.Iterable,ScriptHost","experimental":false,"configOnly":false},"listEmittedFiles":{"cliOption":"--listEmittedFiles","type":"boolean","defaultValue":"false","description":"Print names of generated files part of the compilation.","experimental":false,"configOnly":false},"listFiles":{"cliOption":"--listFiles","type":"boolean","defaultValue":"false","description":"Print names of files part of the compilation.","experimental":false,"configOnly":false},"locale":{"cliOption":"--locale","type":"string","defaultValue":"*(platform specific)*","description":"The locale to use to show error messages, e.g. en-us. <br/>Possible values are:  <br/>► English (US): en <br/>► Czech: cs <br/>► German: de <br/>► Spanish: es <br/>► French: fr <br/>► Italian: it <br/>► Japanese: ja <br/>► Korean: ko <br/>► Polish: pl <br/>► Portuguese(Brazil): pt-BR <br/>► Russian: ru <br/>► Turkish: tr <br/>► Simplified Chinese: zh-CN  <br/>► Traditional Chinese: zh-TW","experimental":false,"configOnly":false},"mapRoot":{"cliOption":"--mapRoot","type":"string","defaultValue":"","description":"Specifies the location where debugger should locate map files instead of generated locations. Use this flag if the .map files will be located at run-time in a different location than the .js files. The location specified will be embedded in the sourceMap to direct the debugger where the map files will be located.","experimental":false,"configOnly":false},"maxNodeModuleJsDepth":{"cliOption":"--maxNodeModuleJsDepth","type":"number","defaultValue":"0","description":"The maximum dependency depth to search under node_modules and load JavaScript files. Only applicable with --allowJs.","experimental":false,"configOnly":false},"module":{"cliOption":["--module","-m"],"type":"string","defaultValue":"target === \"ES3\" or \"ES5\" ? \"CommonJS\" : \"ES6\"","description":"Specify module code generation: \"None\", \"CommonJS\", \"AMD\", \"System\", \"UMD\", \"ES6\", \"ES2015\" or \"ESNext\".<br/>► Only \"AMD\" and \"System\" can be used in conjunction with --outFile.<br/>► \"ES6\" and \"ES2015\" values may be used when targeting \"ES5\" or lower.","experimental":false,"configOnly":false},"moduleResolution":{"cliOption":"--moduleResolution","type":"string","defaultValue":"module === \"AMD\" or \"System\" or \"ES6\" ?  \"Classic\" : \"Node\"","description":"Determine how modules get resolved. Either \"Node\" for Node.js/io.js style resolution, or \"Classic\". See [Module Resolution documentation](./Module Resolution.md) for more details.","experimental":false,"configOnly":false},"newLine":{"cliOption":"--newLine","type":"string","defaultValue":"*(platform specific)*","description":"Use the specified end of line sequence to be used when emitting files: \"crlf\" (windows) or \"lf\" (unix).\"","experimental":false,"configOnly":false},"noEmit":{"cliOption":"--noEmit","type":"boolean","defaultValue":"false","description":"Do not emit outputs.","experimental":false,"configOnly":false},"noEmitHelpers":{"cliOption":"--noEmitHelpers","type":"boolean","defaultValue":"false","description":"Do not generate custom helper functions like __extends in compiled output.","experimental":false,"configOnly":false},"noEmitOnError":{"cliOption":"--noEmitOnError","type":"boolean","defaultValue":"false","description":"Do not emit outputs if any errors were reported.","experimental":false,"configOnly":false},"noErrorTruncation":{"cliOption":"--noErrorTruncation","type":"boolean","defaultValue":"false","description":"Do not truncate error messages.","experimental":false,"configOnly":false},"noFallthroughCasesInSwitch":{"cliOption":"--noFallthroughCasesInSwitch","type":"boolean","defaultValue":"false","description":"Report errors for fallthrough cases in switch statement.","experimental":false,"configOnly":false},"noImplicitAny":{"cliOption":"--noImplicitAny","type":"boolean","defaultValue":"false","description":"Raise error on expressions and declarations with an implied any type.","experimental":false,"configOnly":false},"noImplicitReturns":{"cliOption":"--noImplicitReturns","type":"boolean","defaultValue":"false","description":"Report error when not all code paths in function return a value.","experimental":false,"configOnly":false},"noImplicitThis":{"cliOption":"--noImplicitThis","type":"boolean","defaultValue":"false","description":"Raise error on this expressions with an implied any type.","experimental":false,"configOnly":false},"noImplicitUseStrict":{"cliOption":"--noImplicitUseStrict","type":"boolean","defaultValue":"false","description":"Do not emit \"use strict\" directives in module output.","experimental":false,"configOnly":false},"noLib":{"cliOption":"--noLib","type":"boolean","defaultValue":"false","description":"Do not include the default library file (lib.d.ts).","experimental":false,"configOnly":false},"noResolve":{"cliOption":"--noResolve","type":"boolean","defaultValue":"false","description":"Do not add triple-slash references or module import targets to the list of compiled files.","experimental":false,"configOnly":false},"noStrictGenericChecks":{"cliOption":"--noStrictGenericChecks","type":"boolean","defaultValue":"false","description":"Disable strict checking of generic signatures in function types.","experimental":false,"configOnly":false},"noUnusedLocals":{"cliOption":"--noUnusedLocals","type":"boolean","defaultValue":"false","description":"Report errors on unused locals.","experimental":false,"configOnly":false},"noUnusedParameters":{"cliOption":"--noUnusedParameters","type":"boolean","defaultValue":"false","description":"Report errors on unused parameters.","experimental":false,"configOnly":false},"out":{"cliOption":"--out","type":"string","defaultValue":"","description":"DEPRECATED. Use --outFile instead.","experimental":false,"configOnly":false},"outDir":{"cliOption":"--outDir","type":"string","defaultValue":"","description":"Redirect output structure to the directory.","experimental":false,"configOnly":false},"outFile":{"cliOption":"--outFile","type":"string","defaultValue":"","description":"Concatenate and emit output to single file. The order of concatenation is determined by the list of files passed to the compiler on the command line along with triple-slash references and imports. See [output file order documentation](https://github.com/Microsoft/TypeScript/wiki/FAQ#how-do-i-control-file-ordering-in-combined-output---out-) for more details.","experimental":false,"configOnly":false},"paths":{"cliOption":null,"type":"Object","defaultValue":"","description":"List of path mapping entries for module names to locations relative to the baseUrl. See [Module Resolution documentation](./Module Resolution.md#path-mapping) for more details.","experimental":false,"configOnly":true},"preserveConstEnums":{"cliOption":"--preserveConstEnums","type":"boolean","defaultValue":"false","description":"Do not erase const enum declarations in generated code. See [const enums documentation](https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md#94-constant-enum-declarations) for more details.","experimental":false,"configOnly":false},"preserveSymlinks":{"cliOption":"--preserveSymlinks","type":"boolean","defaultValue":"false","description":"Do not resolve symlinks to their real path; treat a symlinked file like a real one.","experimental":false,"configOnly":false},"preserveWatchOutput":{"cliOption":"--preserveWatchOutput","type":"boolean","defaultValue":"false","description":"Keep outdated console output in watch mode instead of clearing the screen","experimental":false,"configOnly":false},"pretty":{"cliOption":"--pretty","type":"boolean","defaultValue":"true unless piping to another program or redirecting output to a file","description":"Stylize errors and messages using color and context.","experimental":false,"configOnly":false},"project":{"cliOption":["--project","-p"],"type":"string","defaultValue":"","description":"Compile a project given a valid configuration file.<br/>The argument can be a file path to a valid JSON configuration file, or a directory path to a directory containing a tsconfig.json file.<br/>See [tsconfig.json](./tsconfig.json.md) documentation for more details.","experimental":false,"configOnly":false},"reactNamespace":{"cliOption":"--reactNamespace","type":"string","defaultValue":"\"React\"","description":"DEPRECATED. Use --jsxFactory instead.<br/>Specifies the object invoked for createElement and __spread when targeting \"react\" JSX emit.","experimental":false,"configOnly":false},"removeComments":{"cliOption":"--removeComments","type":"boolean","defaultValue":"false","description":"Remove all comments except copy-right header comments beginning with /*!","experimental":false,"configOnly":false},"resolveJsonModule":{"cliOption":"--resolveJsonModule","type":"boolean","defaultValue":"false","description":"Include modules imported with .json extension.","experimental":false,"configOnly":false},"rootDir":{"cliOption":"--rootDir","type":"string","defaultValue":"*(common root directory is computed from the list of input files)*","description":"Specifies the root directory of input files. Only use to control the output directory structure with --outDir.","experimental":false,"configOnly":false},"rootDirs":{"cliOption":null,"type":"string[]","defaultValue":"","description":"List of <i>root</i> folders whose combined content represent the structure of the project at runtime. See [Module Resolution documentation](./Module Resolution.md#virtual-directories-with-rootdirs) for more details.","experimental":false,"configOnly":true},"showConfig":{"cliOption":"--showConfig","type":"boolean","defaultValue":"false","description":"Rather than actually execute a build with the other input options and config files, show the final implied config file in the output.","experimental":false,"configOnly":false},"skipDefaultLibCheck":{"cliOption":"--skipDefaultLibCheck","type":"boolean","defaultValue":"false","description":"DEPRECATED. Use --skipLibCheck instead.<br/>Skip type checking of [default library declaration files](./Triple-Slash Directives.md#-reference-no-default-libtrue).","experimental":false,"configOnly":false},"skipLibCheck":{"cliOption":"--skipLibCheck","type":"boolean","defaultValue":"false","description":"Skip type checking of all declaration files (*.d.ts).","experimental":false,"configOnly":false},"sourceMap":{"cliOption":"--sourceMap","type":"boolean","defaultValue":"false","description":"Generates corresponding .map file.","experimental":false,"configOnly":false},"sourceRoot":{"cliOption":"--sourceRoot","type":"string","defaultValue":"","description":"Specifies the location where debugger should locate TypeScript files instead of source locations. Use this flag if the sources will be located at run-time in a different location than that at design-time. The location specified will be embedded in the sourceMap to direct the debugger where the source files will be located.","experimental":false,"configOnly":false},"strict":{"cliOption":"--strict","type":"boolean","defaultValue":"false","description":"Enable all strict type checking options. <br/>Enabling --strict enables --noImplicitAny, --noImplicitThis, --alwaysStrict, --strictBindCallApply, --strictNullChecks, --strictFunctionTypes and --strictPropertyInitialization.","experimental":false,"configOnly":false},"strictBindCallApply":{"cliOption":"--strictBindCallApply","type":"boolean","defaultValue":"false","description":"Enable stricter checking of of the bind, call, and apply methods on functions.","experimental":false,"configOnly":false},"strictFunctionTypes":{"cliOption":"--strictFunctionTypes","type":"boolean","defaultValue":"false","description":"Disable bivariant parameter checking for function types.","experimental":false,"configOnly":false},"strictPropertyInitialization":{"cliOption":"--strictPropertyInitialization","type":"boolean","defaultValue":"false","description":"Ensure non-undefined class properties are initialized in the constructor. This option requires --strictNullChecks be enabled in order to take effect.","experimental":false,"configOnly":false},"strictNullChecks":{"cliOption":"--strictNullChecks","type":"boolean","defaultValue":"false","description":"In strict null checking mode, the null and undefined values are not in the domain of every type and are only assignable to themselves and any (the one exception being that undefined is also assignable to void).","experimental":false,"configOnly":false},"suppressExcessPropertyErrors":{"cliOption":"--suppressExcessPropertyErrors","type":"boolean","defaultValue":"false","description":"Suppress excess property checks for object literals.","experimental":false,"configOnly":false},"suppressImplicitAnyIndexErrors":{"cliOption":"--suppressImplicitAnyIndexErrors","type":"boolean","defaultValue":"false","description":"Suppress --noImplicitAny errors for indexing objects lacking index signatures. See [issue #1232](https://github.com/Microsoft/TypeScript/issues/1232#issuecomment-64510362) for more details.","experimental":false,"configOnly":false},"target":{"cliOption":["--target","-t"],"type":"string","defaultValue":"\"ES3\"","description":"Specify ECMAScript target version: \"ES3\" (default), \"ES5\", \"ES6\"/\"ES2015\", \"ES2016\", \"ES2017\" or \"ESNext\". <br/><br/> Note: \"ESNext\" targets latest supported [ES proposed features](https://github.com/tc39/proposals).","experimental":false,"configOnly":false},"traceResolution":{"cliOption":"--traceResolution","type":"boolean","defaultValue":"false","description":"Report module resolution log messages.","experimental":false,"configOnly":false},"tsBuildInfoFile":{"cliOption":"--tsBuildInfoFile","type":"string","defaultValue":".tsbuildinfo","description":"Specify what file to store incremental build information in.","experimental":false,"configOnly":false},"types":{"cliOption":"--types","type":"string[]","defaultValue":"","description":"List of names of type definitions to include. See [@types, --typeRoots and --types](./tsconfig.json.md#types-typeroots-and-types) for more details.","experimental":false,"configOnly":false},"typeRoots":{"cliOption":"--typeRoots","type":"string[]","defaultValue":"","description":"List of folders to include type definitions from. See [@types, --typeRoots and --types](./tsconfig.json.md#types-typeroots-and-types) for more details.","experimental":false,"configOnly":false},"version":{"cliOption":["--version","-v"],"type":"cli operation","defaultValue":"","description":"Print the compiler's version.","experimental":false,"configOnly":false},"watch":{"cliOption":["--watch","-w"],"type":"cli operation","defaultValue":"","description":"Run the compiler in watch mode. Watch input files and trigger recompilation on changes. The implementation of watching files and directories can be configured using environment variable. See [configuring watch](./Configuring%20Watch.md) for more details.","experimental":false,"configOnly":false}}
+{
+  "allowJs": {
+    "cliFlag": "--allowJs",
+    "defaultValue": "false",
+    "description": "Allow JavaScript files to be compiled.",
+    "extendedDescription": "The `allowJs` compiler option enables the TypeScript compiler to additionally process `.js` files. After processing for syntax errors, the compiler will pass the `.js` files straight through to the output directory. This option is useful when migrating a JavaScript project incrementally to TypeScript.",
+    "experimental": false,
+    "refLinks": [
+      {
+        "title": "Medium - Incrementally Migrating JavaScrip to TypeScript",
+        "link": "https://medium.com/@clayallsopp/incrementally-migrating-javascript-to-typescript-565020e49c88"
+      },
+      {
+        "title": "TypeScript Handbook - Migrating from JavaScript",
+        "link": "https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html"
+      },
+      {
+        "title": "Stack Overflow -  How does TypeScript allowJs work?",
+        "link": "https://stackoverflow.com/questions/40089419/how-does-typescript-allowjs-work"
+      }
+    ],
+    "type": "boolean"
+  },
+  "allowSyntheticDefaultImports": {
+    "cliFlag": "--allowSyntheticDefaultImports",
+    "defaultValue": "module === \"system\" or --esModuleInterop",
+    "description": "Allow default imports from modules with no default export. This does not affect code emit, just typechecking.",
+    "extendedDescription": "This rule enables the use of ES2015 style default imports even when the code being imported does not have an ES2015 default export. Default import and export correspond to `import Thing from 'code'` and `export default thing` respectively (see the reference link below for more details). Default exports have not always been apart of JavaScript. This option will allow you to use the default import syntax even when the corresponding code does not have a default export.\nA great example of this is the popular `React` library. `React` ships a built version of itself that does not make use of ES2015's default export. With TypeScript, to import `React` **without** the `allowSyntheticDefaultImports` enabled, you must use `import * as React from 'react'`. By enabling the option, this import can be simplified to `import React from 'react'`. This compiler option is also enabled by default when using the `esModuleInterop` compiler option.",
+    "experimental": false,
+    "refLinks": [
+      {
+        "title": "Getting started with TypeScript and React",
+        "link": "https://javascriptplayground.com/react-typescript/"
+      },
+      {
+        "title": "Do I need to enable allowSyntheticDefaultImports if esModuleInterop is true?",
+        "link": "https://stackoverflow.com/questions/52576203/do-i-ever-need-explicit-allowsyntheticdefaultimports-if-esmoduleinterop-is-true"
+      },
+      {
+        "title": "Default import/export example",
+        "link": "https://github.com/Microsoft/TypeScript/issues/7185#issuecomment-421632656"
+      }
+    ],
+    "type": "boolean"
+  },
+  "allowUmdGlobalAccess": {
+    "cliFlag": "--allowUmdGlobalAccess",
+    "defaultValue": "false",
+    "description": "Allow accessing UMD globals from modules.",
+    "extendedDescription": "`allowUMDGlobalAccess` enables referencing of Universal Module Definition (UMD) global declarations like `export as namespace foo` from anywhere in your project. After creating this global module, any other script in the project will have access to it.",
+    "refLinks": [
+      {
+        "title": "Announcing TypeScript 3.5 - The --allowUmdGlobalAccess flag",
+        "link": "https://devblogs.microsoft.com/typescript/announcing-typescript-3-5/#the---allowumdglobalaccess-flag"
+      }
+    ],
+    "experimental": false,
+    "type": "boolean"
+  },
+  "allowUnreachableCode": {
+    "cliFlag": "--allowUnreachableCode",
+    "defaultValue": "false",
+    "description": "Do not report errors on unreachable code.",
+    "extendedDescription": "With this option enabled, the following code snippet will not yield any compilation errors \n```typescript\nconst fn = () => {\n  if (true) {\n    return 'reachable'\n  } else {\n    return 'also reachable'\n  }\n  return 'totally unreachable'\n}\n```",
+    "refLinks": [
+      {
+        "title": "TypeScript 1.8 - Unreachable code",
+        "link": "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-8.html#unreachable-code"
+      }
+    ],
+    "experimental": false,
+    "type": "boolean"
+  },
+  "allowUnusedLabels": {
+    "cliFlag": "--allowUnusedLabels",
+    "defaultValue": "false",
+    "description": "Do not report errors on unused labels.",
+    "extendedDescription": "A perceptively unknown, or rarely used JavaScript feature is a labeled statement. It is used with `break` or `continue` statements in loop operations. The `allowUnusedLabels` flag enables TypeScript to not report errors when a label is unused such as in the following code snippet: \n```typescript\nloop: while(x < 10) {\n  x++\n}\n```",
+    "refLinks": [
+      {
+        "title": "TypeScript 1.8 - Unused labels",
+        "link": "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-8.html#unused-labels"
+      },
+      {
+        "title": "MDN web docs - label",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label"
+      }
+    ],
+    "experimental": false,
+    "type": "boolean"
+  },
+  "alwaysStrict": {
+    "cliFlag": "--alwaysStrict",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Parse in strict mode and emit \"use strict\" for each source file",
+    "extendedDescription": "With this option enabled, all TypeScript code in the project will be parsed in ES5 strict mode, and the `\"use strict\"` statement will be placed at the top of all compiled output code. This option is automatically enabled when using the compiler option `--strict`. Read more on ES5 strict mode in the references section.",
+    "refLinks": [
+      {
+        "title": "What Does \"use strict\" do in JavaScript?",
+        "link": "https://stackoverflow.com/questions/1335851/what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it"
+      },
+      {
+        "title": "ECMAScript 5 Strict Mode, JSON, and More - Strict Mode",
+        "link": "https://johnresig.com/blog/ecmascript-5-strict-mode-json-and-more/"
+      },
+      {
+        "title": "The --strict Compiler Option in TypeScript",
+        "link": "https://mariusschulz.com/blog/the-strict-compiler-option-in-typescript"
+      }
+    ],
+    "experimental": false
+  },
+  "baseUrl": {
+    "cliFlag": "--baseUrl",
+    "defaultValue": "",
+    "description": "Base directory to resolve non-relative module names.",
+    "extendedDescription": "When using Asynchronous Module Definitions, it is common practice to use a `baseUrl` when using Asynchronous Module Definitions (AMD). This compiler option informs the compiler where to find modules. All module imports with non-relative names are assumed to be relative to the `baseUrl`. Relative module imports are not impacted by setting the baseUrl. For more information on baseUrl and AMD, visit the documentation in the references section.",
+    "refLinks": [
+      {
+        "title": "TypeScript Handbook - Module Resolution - Base URL",
+        "link": "https://www.typescriptlang.org/docs/handbook/module-resolution.html#base-url"
+      },
+      {
+        "title": "RequireJS - Why AMD?",
+        "link": "https://requirejs.org/docs/whyamd.html"
+      },
+      {
+        "title": "RequireJS API - Configuration Options - baseUrl",
+        "link": "https://requirejs.org/docs/api.html#config-baseUrl"
+      }
+    ],
+    "experimental": false,
+    "type": "string"
+  },
+  "build": {
+    "cliFlag": [
+      "--build",
+      "-b"
+    ],
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Builds this project and all of its dependencies specified by Project References.",
+    "experimental": false,
+    "extendedDescription": "The `--build` flag builds your TypeScript project through Project References allowing the structure of the program to be broken up into smaller pieces. This is a new feature in TypeScript 3.0 and a complete guide can be found at the Project References documention in the references section. When enabled, use the `references` top-level property to specify project references.",
+    "refLinks": [
+      {
+        "title": "TypeScript Handbook - Project References",
+        "link": "https://www.typescriptlang.org/docs/handbook/project-references.html"
+      }
+    ]
+  },
+  "charset": {
+    "cliFlag": "--charset",
+    "type": "string",
+    "defaultValue": "\"utf8\"",
+    "description": "The character set of the input files.",
+    "experimental": false,
+    "extendedDescription": "The average TypeScript developer shouldn't worry about this option; most things will be in UTF-8. Some other recognizable charsets include: ASCII, ANSI, and ISO-8859-1.",
+    "refLinks": [
+      {
+        "title": "HTML Charset",
+        "link": "https://www.w3schools.com/html/html_charset.asp"
+      }
+    ]
+  },
+  "checkJs": {
+    "cliFlag": "--checkJs",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Report errors in .js files.",
+    "experimental": false,
+    "extendedDescription": "This option must be used in conjunction with `--allowJs`. While `--allowJs` does a very cursory check of `.js` files, and passes them through to the compiler output, this option, `--chechJs` actually type checks the JavaScript code. It does so through the use of inferrence and JSDoc annotations. In your code itself, make use of the `// @ts-nocheck` and `// @ts-check` comments to create a blacklist/whitelist of files to check. Additionally, use the `// @ts-ignore` to ignore specific lines of code directly (place the comment on the preceding line). This compiler option is another great tool for converting JavaScript projects to TypeScript.",
+    "refLinks": [
+      {
+        "title": "Type Checking JavaScript Files",
+        "link": "https://www.typescriptlang.org/docs/handbook/type-checking-javascript-files.html"
+      },
+      {
+        "title": "Type-Checking JavaScript Files with --checkJs in TypeScript",
+        "link": "https://mariusschulz.com/blog/type-checking-javascript-files-with-checkjs-in-typescript"
+      }
+    ]
+  },
+  "composite": {
+    "cliFlag": "--composite",
+    "type": "boolean",
+    "defaultValue": "true",
+    "description": "Ensure TypeScript can determine where to find the outputs of the referenced project to compile project.",
+    "experimental": false,
+    "extendedDescription": "Enabling this flag changes a few things:\n- The `rootDir` setting, if not explicitly set, defaults to the directory containing the `tsconfig` file\n- All implementation files must be matched by an `include` pattern or listed in the `files` array. If this constraint is violated, `tsc` will inform you which files weren't specified\n- `declaration` must be enabled\nUse this flag when developing with the Project References pattern detailed in the documentation in the references section.",
+    "refLinks": [
+      {
+        "title": "TypeScript Handbook - Project References",
+        "link": "https://www.typescriptlang.org/docs/handbook/project-references.html"
+      }
+    ]
+  },
+  "declaration": {
+    "cliFlag": [
+      "--declaration",
+      "-d"
+    ],
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Generates corresponding .d.ts file.",
+    "experimental": false,
+    "extendedDescription": "This flag will generate TypeScript type definition files when enabled. Type definition files are used to share types accross projects. For example, if the project you're working on will be published to a package registry and then used by other projects, use this flag to generate a definition file and make sure to publish it along side the compiled output code. When another developer installs your project, their TypeScript compiler will make use of the included definition file for type inferrence.\nThe documentation linked in the references section goes into further details on publishing declaration files in npm packages",
+    "refLinks": [
+      {
+        "title": "TypeScript Handbook - Declaration Files - Publishing",
+        "link": "https://www.typescriptlang.org/docs/handbook/declaration-files/publishing.html"
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "declarationDir": {
+    "cliFlag": "--declarationDir",
+    "type": "string",
+    "defaultValue": "",
+    "description": "Output directory for generated declaration files.",
+    "experimental": false,
+    "extendedDescription": "Specify a directory output for declaration (.d.ts) files. This must be used in conjunction with `declaration`. It will override the output directory specified by `outDir`",
+    "refLinks": []
+  },
+  "declarationMap": {
+    "cliFlag": "--declarationMap",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Generates a sourcemap for each corresponding '.d.ts' file.",
+    "experimental": false,
+    "extendedDescription": "This compiler option must be enabled along side `--declaration` and will cause the compiler to emit `.d.ts.map` files alongside the output of the `.d.ts` files. This is useful for developer tooling integration such as the go-to-definition feature in VS Code.",
+    "refLinks": [
+      {
+        "title": "TypeScript Handbook - TypeScript 2.9 - New --declarationMap",
+        "link": "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-9.html"
+      }
+    ]
+  },
+  "diagnostics": {
+    "cliFlag": "--diagnostics",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Show diagnostic information.",
+    "experimental": false,
+    "extendedDescription": "Not much information exists for this option. It should output detailed information about the compiler and the build output.",
+    "refLinks": []
+  },
+  "disableSizeLimit": {
+    "cliFlag": "--disableSizeLimit",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Disable size limitation on JavaScript project.",
+    "experimental": false,
+    "extendedDescription": "The TypeScript compiler will only load a maximum of 20MB non-typescript files into a project. A `Too many JavaScript files in the project.` error will pop up and recommend either using the `exclude` setting or this `disableSizeLimit` compiler option setting.",
+    "refLinks": [
+      {
+        "title": "TypeScript GitHub Issue #7444 that introduced this option.",
+        "link": "https://github.com/Microsoft/TypeScript/issues/7444#issuecomment-197064666"
+      }
+    ]
+  },
+  "downlevelIteration": {
+    "cliFlag": "--downlevelIteration",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Provide full support for iterables in for..of, spread and destructuring when targeting ES5 or ES3.",
+    "experimental": false,
+    "extendedDescription": "The `downlevelIteration` flag enables full support for generators and the Iterator protocol for ES3 and ES5 projects. Without this option, generators and the Iterator protocol were only supported if the project `target` was ES6/ES2015 or later. This requires a native `Symbol.iterator` or `Symbol.iterator` shim at runtime for any non-array values. The second reference link _Downlevel Iteration for ES3/ES5 in TypeScript_ provides a wonderful breakdown of this property and exactly how it transforms your TypeScript code.",
+    "refLinks": [
+      {
+        "title": "TypeScript Handbook - TypeScript 2.3 - New --downlevelIteration",
+        "link": "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-3.html#new---downleveliteration"
+      },
+      {
+        "title": "Downlevel Iteration for ES3/ES5 in TypeScript",
+        "link": "https://mariusschulz.com/blog/downlevel-iteration-for-es3-es5-in-typescript"
+      },
+      {
+        "title": "MDN - Iteration Protocols",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols"
+      }
+    ]
+  },
+  "emitBOM": {
+    "cliFlag": "--emitBOM",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Emit a UTF-8 Byte Order Mark (BOM) in the beginning of output files.",
+    "experimental": false,
+    "extendedDescription": "Adds the \"\\uFEFF\" to the start of all output files. This mark is called a Byte Order Mark (BOM) and is an adstract character used to declare and recognize Unicode encoding of a text file. Node.js specifically detecs the \"\\uFEFF\" at the start of the string and replaces it with the actual BOM from the specified encoding.",
+    "refLinks": [
+      {
+        "title": "Byte Order Mark",
+        "link": "https://simple.wikipedia.org/wiki/Byte_order_mark"
+      },
+      {
+        "title": "sys.ts code reference",
+        "link": "https://github.com/microsoft/TypeScript/blob/70b7bd5a1b8c3bc1ba7c644b37412368607706e6/src/compiler/sys.ts#L639-L641"
+      }
+    ]
+  },
+  "emitDeclarationOnly": {
+    "cliFlag": "--emitDeclarationOnly",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Only emit '.d.ts' declaration files.",
+    "experimental": false,
+    "extendedDescription": "This option will not emit JavaScript files from the build output. It will only emit `.d.ts` type definition files. This option pairs well with alternate compilation configurations such as a Babel 7.",
+    "refLinks": [
+      {
+        "title": "TypeScript - Announcing TypeScrip 2.8.2 - Declaration-only emit",
+        "link": "https://devblogs.microsoft.com/typescript/announcing-typescript-2-8-2/#declaration-only-emit"
+      }
+    ]
+  },
+  "emitDecoratorMetadata": {
+    "cliFlag": "--emitDecoratorMetadata",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Emit design-type metadata for decorated declarations in source.",
+    "experimental": true,
+    "extendedDescription": "This option is included in TypeScript for emitting certain types of metadata for declarations that have decorators. Enable this with the `--experimentalDecorators` flag or a `--target` version that supports the decorator protocol. This metadata is best used with the `reflect-metadata` library which adds a polyfill for an experimental metadata API. This option is experimental until metadata is adopted in ECMAScript standard.",
+    "refLinks": [
+      {
+        "title": "Emit serialized design-time type metadata for decorators",
+        "link": "https://github.com/Microsoft/TypeScript/issues/2577"
+      },
+      {
+        "title": "Reflect Metadata",
+        "link": "https://github.com/rbuckton/reflect-metadata"
+      }
+    ]
+  },
+  "esModuleInterop": {
+    "cliFlag": "--esModuleInterop",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Emit __importStar and __importDefault helpers for runtime babel ecosystem compatibility and enable --allowSyntheticDefaultImports for typesystem compatibility.",
+    "experimental": false,
+    "extendedDescription": "The `--esModuleInterop` flag enables more babel like import styles. Technically, it updates CommonJS/AMD/UMD modules emit to syntehsize namespace records based on the presence of an __esModule indicator. This will slightly change how modules are imported. Firstly, namespace imports `import * as foo from 'foo'` is now uncallable (i.e. `foo()` is considered invalid). Secondly, default imports are now allowed (`import fs from 'fs'`) and will work as expected. Keep in mind that if the compiler option `module` is set to `es2015` you'll also need to enable the `allowSyntheticDefaultImports` option aswell.",
+    "refLinks": [
+      {
+        "title": "TypeScript Handbook - TypeScript 2.7",
+        "link": "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-7.html#support-for-import-d-from-cjs-from-commonjs-modules-with---esmoduleinterop"
+      },
+      {
+        "title": "StackOverflow esModuleInterop flag",
+        "link": "https://stackoverflow.com/questions/48785451/is-there-a-way-to-use-esmoduleinterop-in-tsconfig-as-opposed-to-it-being-a-fla"
+      },
+      {
+        "title": "Great Import Schism: TypeScript confusion around imports explained",
+        "link": "https://itnext.io/great-import-schism-typescript-confusion-around-imports-explained-d512fc6769c2"
+      }
+    ]
+  },
+  "experimentalDecorators": {
+    "cliFlag": "--experimentalDecorators",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Enables experimental support for ES decorators.",
+    "experimental": true,
+    "extendedDescription": "This flag will enable the use of the decorators within your TypeScript project. The Decorators Proposal is currently at Stage 2, but is supported by TypeScript. Learn more about using decorators in the resources below. The `target` version must be atleast `ES5`.",
+    "refLinks": [
+      {
+        "title": "TC39 - Decorators Proposal",
+        "link": "https://github.com/tc39/proposal-decorators"
+      },
+      {
+        "title": "TypeScript Handbook - Decorators",
+        "link": "https://www.typescriptlang.org/docs/handbook/decorators.html"
+      }
+    ]
+  },
+  "extendedDiagnostics": {
+    "cliFlag": "--extendedDiagnostics",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Show verbose diagnostic information",
+    "experimental": false,
+    "extendedDescription": "This option displays various diagnostic information about a build including timings, memory used, and other metrics such as the number of files, symbols, and types.",
+    "refLinks": []
+  },
+  "forceConsistentCasingInFileNames": {
+    "cliFlag": "--forceConsistentCasingInFileNames",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Disallow inconsistently-cased references to the same file.",
+    "experimental": false,
+    "extendedDescription": "Thie option will detect case-sensitive import issues at compile time. According to a blog post import statements are case-insensitive on Mac and Windows, but are case-sensitive on Linux. This inconsistency can cause issues when using speficic libraries.",
+    "refLinks": [
+      {
+        "title": "Case Sensitive Import Statements in Typescript - Brian De Sousa",
+        "link": "https://briandesousa.net/2019/02/08/case-sensitive-import-statements-in-typescript/"
+      }
+    ]
+  },
+  "help": {
+    "cliFlag": [
+      "--help",
+      "-h"
+    ],
+    "type": "cli operation",
+    "defaultValue": "",
+    "description": "Print help message.",
+    "experimental": false,
+    "extendedDescription": "This is a command line interface only option. It will display a shorter list of available compiler options with their shortened descriptions.",
+    "refLinks": []
+  },
+  "importHelpers": {
+    "cliFlag": "--importHelpers",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Import emit helpers (e.g. __extends, __rest, etc..) from [tslib](https://www.npmjs.com/package/tslib)",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "incremental": {
+    "cliFlag": "--incremental",
+    "type": "boolean",
+    "defaultValue": "true if composite is on, false otherwise",
+    "description": "Enable incremental compilation by reading/writing information from prior compilations to a file on disk. This file is controlled by the --tsBuildInfoFile flag.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "inlineSourceMap": {
+    "cliFlag": "--inlineSourceMap",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Emit a single file with source maps instead of having a separate file.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "inlineSources": {
+    "cliFlag": "--inlineSources",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Emit the source alongside the sourcemaps within a single file; requires --inlineSourceMap or --sourceMap to be set.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "init": {
+    "cliFlag": "--init",
+    "type": "cli operation",
+    "defaultValue": "",
+    "description": "Initializes a TypeScript project and creates a tsconfig.json file.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "isolatedModules": {
+    "cliFlag": "--isolatedModules",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Transpile each file as a separate module (similar to \"ts.transpileModule\").",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "jsx": {
+    "cliFlag": "--jsx",
+    "type": "string",
+    "defaultValue": "\"preserve\"",
+    "description": "Support JSX in .tsx files: \"react\", \"preserve\", \"react-native\". See [JSX](./JSX.md).",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "jsxFactory": {
+    "cliFlag": "--jsxFactory",
+    "type": "string",
+    "defaultValue": "\"React.createElement\"",
+    "description": "Specify the JSX factory function to use when targeting react JSX emit, e.g. React.createElement or h.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "keyofStringsOnly": {
+    "cliFlag": "--keyofStringsOnly",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Resolve keyof to string valued property names only (no numbers or symbols).",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "lib": {
+    "cliFlag": "--lib",
+    "type": "string[]",
+    "defaultValue": "",
+    "description": "List of library files to be included in the compilation.<br/>Possible values are:  <br/>► ES5 <br/>► ES6 <br/>► ES2015 <br/>► ES7 <br/>► ES2016 <br/>► ES2017  <br/>► ES2018 <br/>► ESNext <br/>► DOM <br/>► DOM.Iterable <br/>► WebWorker <br/>► ScriptHost <br/>► ES2015.Core <br/>► ES2015.Collection <br/>► ES2015.Generator <br/>► ES2015.Iterable <br/>► ES2015.Promise <br/>► ES2015.Proxy <br/>► ES2015.Reflect <br/>► ES2015.Symbol <br/>► ES2015.Symbol.WellKnown <br/>► ES2016.Array.Include <br/>► ES2017.object <br/>► ES2017.Intl <br/>► ES2017.SharedMemory <br/>► ES2017.String <br/>► ES2017.TypedArrays <br/>► ES2018.Intl <br/>► ES2018.Promise <br/>► ES2018.RegExp <br/>► ESNext.AsyncIterable <br/>► ESNext.Array <br/>► ESNext.Intl <br/>► ESNext.Symbol <br/><br/> Note: If --lib is not specified a default list of libraries are injected. The default libraries injected are:  <br/> ► For --target ES5: DOM,ES5,ScriptHost<br/>  ► For --target ES6: DOM,ES6,DOM.Iterable,ScriptHost",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "listEmittedFiles": {
+    "cliFlag": "--listEmittedFiles",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Print names of generated files part of the compilation.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "listFiles": {
+    "cliFlag": "--listFiles",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Print names of files part of the compilation.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "locale": {
+    "cliFlag": "--locale",
+    "type": "string",
+    "defaultValue": "*(platform specific)*",
+    "description": "The locale to use to show error messages, e.g. en-us. <br/>Possible values are:  <br/>► English (US): en <br/>► Czech: cs <br/>► German: de <br/>► Spanish: es <br/>► French: fr <br/>► Italian: it <br/>► Japanese: ja <br/>► Korean: ko <br/>► Polish: pl <br/>► Portuguese(Brazil): pt-BR <br/>► Russian: ru <br/>► Turkish: tr <br/>► Simplified Chinese: zh-CN  <br/>► Traditional Chinese: zh-TW",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "mapRoot": {
+    "cliFlag": "--mapRoot",
+    "type": "string",
+    "defaultValue": "",
+    "description": "Specifies the location where debugger should locate map files instead of generated locations. Use this flag if the .map files will be located at run-time in a different location than the .js files. The location specified will be embedded in the sourceMap to direct the debugger where the map files will be located.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "maxNodeModuleJsDepth": {
+    "cliFlag": "--maxNodeModuleJsDepth",
+    "type": "number",
+    "defaultValue": "0",
+    "description": "The maximum dependency depth to search under node_modules and load JavaScript files. Only applicable with --allowJs.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "module": {
+    "cliFlag": [
+      "--module",
+      "-m"
+    ],
+    "type": "string",
+    "defaultValue": "\"commonjs\"",
+    "description": "Specify module code generation: \"None\", \"CommonJS\", \"AMD\", \"System\", \"UMD\", \"ES6\", \"ES2015\" or \"ESNext\".<br/>► Only \"AMD\" and \"System\" can be used in conjunction with --outFile.<br/>► \"ES6\" and \"ES2015\" values may be used when targeting \"ES5\" or lower.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "moduleResolution": {
+    "cliFlag": "--moduleResolution",
+    "type": "string",
+    "defaultValue": "module === \"AMD\" or \"System\" or \"ES6\" ?  \"Classic\" : \"Node\"",
+    "description": "Determine how modules get resolved. Either \"Node\" for Node.js/io.js style resolution, or \"Classic\". See [Module Resolution documentation](./Module Resolution.md) for more details.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "newLine": {
+    "cliFlag": "--newLine",
+    "type": "string",
+    "defaultValue": "*(platform specific)*",
+    "description": "Use the specified end of line sequence to be used when emitting files: \"crlf\" (windows) or \"lf\" (unix).\"",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "noEmit": {
+    "cliFlag": "--noEmit",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Do not emit outputs.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "noEmitHelpers": {
+    "cliFlag": "--noEmitHelpers",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Do not generate custom helper functions like __extends in compiled output.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "noEmitOnError": {
+    "cliFlag": "--noEmitOnError",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Do not emit outputs if any errors were reported.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "noErrorTruncation": {
+    "cliFlag": "--noErrorTruncation",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Do not truncate error messages.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "noFallthroughCasesInSwitch": {
+    "cliFlag": "--noFallthroughCasesInSwitch",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Report errors for fallthrough cases in switch statement.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "noImplicitAny": {
+    "cliFlag": "--noImplicitAny",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Raise error on expressions and declarations with an implied any type.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "noImplicitReturns": {
+    "cliFlag": "--noImplicitReturns",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Report error when not all code paths in function return a value.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "noImplicitThis": {
+    "cliFlag": "--noImplicitThis",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Raise error on this expressions with an implied any type.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "noImplicitUseStrict": {
+    "cliFlag": "--noImplicitUseStrict",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Do not emit \"use strict\" directives in module output.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "noLib": {
+    "cliFlag": "--noLib",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Do not include the default library file (lib.d.ts).",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "noResolve": {
+    "cliFlag": "--noResolve",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Do not add triple-slash references or module import targets to the list of compiled files.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "noStrictGenericChecks": {
+    "cliFlag": "--noStrictGenericChecks",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Disable strict checking of generic signatures in function types.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "noUnusedLocals": {
+    "cliFlag": "--noUnusedLocals",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Report errors on unused locals.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "noUnusedParameters": {
+    "cliFlag": "--noUnusedParameters",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Report errors on unused parameters.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "out": {
+    "cliFlag": "--out",
+    "type": "string",
+    "defaultValue": "",
+    "description": "DEPRECATED. Use --outFile instead.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "outDir": {
+    "cliFlag": "--outDir",
+    "type": "string",
+    "defaultValue": "",
+    "description": "Redirect output structure to the directory.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "outFile": {
+    "cliFlag": "--outFile",
+    "type": "string",
+    "defaultValue": "",
+    "description": "Concatenate and emit output to single file. The order of concatenation is determined by the list of files passed to the compiler on the command line along with triple-slash references and imports. See [output file order documentation](https://github.com/Microsoft/TypeScript/wiki/FAQ#how-do-i-control-file-ordering-in-combined-output---out-) for more details.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "paths": {
+    "cliFlag": null,
+    "type": "Object",
+    "defaultValue": "",
+    "description": "List of path mapping entries for module names to locations relative to the baseUrl. See [Module Resolution documentation](./Module Resolution.md#path-mapping) for more details.",
+    "experimental": false,
+    "configOnly": true,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "preserveConstEnums": {
+    "cliFlag": "--preserveConstEnums",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Do not erase const enum declarations in generated code. See [const enums documentation](https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md#94-constant-enum-declarations) for more details.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "preserveSymlinks": {
+    "cliFlag": "--preserveSymlinks",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Do not resolve symlinks to their real path; treat a symlinked file like a real one.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "preserveWatchOutput": {
+    "cliFlag": "--preserveWatchOutput",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Keep outdated console output in watch mode instead of clearing the screen",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "pretty": {
+    "cliFlag": "--pretty",
+    "type": "boolean",
+    "defaultValue": "true unless piping to another program or redirecting output to a file",
+    "description": "Stylize errors and messages using color and context.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "project": {
+    "cliFlag": [
+      "--project",
+      "-p"
+    ],
+    "type": "string",
+    "defaultValue": "",
+    "description": "Compile a project given a valid configuration file.<br/>The argument can be a file path to a valid JSON configuration file, or a directory path to a directory containing a tsconfig.json file.<br/>See [tsconfig.json](./tsconfig.json.md) documentation for more details.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "reactNamespace": {
+    "cliFlag": "--reactNamespace",
+    "type": "string",
+    "defaultValue": "\"React\"",
+    "description": "DEPRECATED. Use --jsxFactory instead.<br/>Specifies the object invoked for createElement and __spread when targeting \"react\" JSX emit.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "removeComments": {
+    "cliFlag": "--removeComments",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Remove all comments except copy-right header comments beginning with /*!",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "resolveJsonModule": {
+    "cliFlag": "--resolveJsonModule",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Include modules imported with .json extension.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "rootDir": {
+    "cliFlag": "--rootDir",
+    "type": "string",
+    "defaultValue": "*(common root directory is computed from the list of input files)*",
+    "description": "Specifies the root directory of input files. Only use to control the output directory structure with --outDir.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "rootDirs": {
+    "cliFlag": null,
+    "type": "string[]",
+    "defaultValue": "",
+    "description": "List of <i>root</i> folders whose combined content represent the structure of the project at runtime. See [Module Resolution documentation](./Module Resolution.md#virtual-directories-with-rootdirs) for more details.",
+    "experimental": false,
+    "configOnly": true,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "showConfig": {
+    "cliFlag": "--showConfig",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Rather than actually execute a build with the other input options and config files, show the final implied config file in the output.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "skipDefaultLibCheck": {
+    "cliFlag": "--skipDefaultLibCheck",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "DEPRECATED. Use --skipLibCheck instead.<br/>Skip type checking of [default library declaration files](./Triple-Slash Directives.md#-reference-no-default-libtrue).",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "skipLibCheck": {
+    "cliFlag": "--skipLibCheck",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Skip type checking of all declaration files (*.d.ts).",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "sourceMap": {
+    "cliFlag": "--sourceMap",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Generates corresponding .map file.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "sourceRoot": {
+    "cliFlag": "--sourceRoot",
+    "type": "string",
+    "defaultValue": "",
+    "description": "Specifies the location where debugger should locate TypeScript files instead of source locations. Use this flag if the sources will be located at run-time in a different location than that at design-time. The location specified will be embedded in the sourceMap to direct the debugger where the source files will be located.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "strict": {
+    "cliFlag": "--strict",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Enable all strict type checking options. <br/>Enabling --strict enables --noImplicitAny, --noImplicitThis, --alwaysStrict, --strictBindCallApply, --strictNullChecks, --strictFunctionTypes and --strictPropertyInitialization.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "strictBindCallApply": {
+    "cliFlag": "--strictBindCallApply",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Enable stricter checking of of the bind, call, and apply methods on functions.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "strictFunctionTypes": {
+    "cliFlag": "--strictFunctionTypes",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Disable bivariant parameter checking for function types.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "strictPropertyInitialization": {
+    "cliFlag": "--strictPropertyInitialization",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Ensure non-undefined class properties are initialized in the constructor. This option requires --strictNullChecks be enabled in order to take effect.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "strictNullChecks": {
+    "cliFlag": "--strictNullChecks",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "In strict null checking mode, the null and undefined values are not in the domain of every type and are only assignable to themselves and any (the one exception being that undefined is also assignable to void).",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "suppressExcessPropertyErrors": {
+    "cliFlag": "--suppressExcessPropertyErrors",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Suppress excess property checks for object literals.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "suppressImplicitAnyIndexErrors": {
+    "cliFlag": "--suppressImplicitAnyIndexErrors",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Suppress --noImplicitAny errors for indexing objects lacking index signatures. See [issue #1232](https://github.com/Microsoft/TypeScript/issues/1232#issuecomment-64510362) for more details.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "target": {
+    "cliFlag": [
+      "--target",
+      "-t"
+    ],
+    "type": "string",
+    "defaultValue": "\"ES3\"",
+    "description": "Specify ECMAScript target version: \"ES3\" (default), \"ES5\", \"ES6\"/\"ES2015\", \"ES2016\", \"ES2017\" or \"ESNext\". <br/><br/> Note: \"ESNext\" targets latest supported [ES proposed features](https://github.com/tc39/proposals).",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "traceResolution": {
+    "cliFlag": "--traceResolution",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "Report module resolution log messages.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "tsBuildInfoFile": {
+    "cliFlag": "--tsBuildInfoFile",
+    "type": "string",
+    "defaultValue": ".tsbuildinfo",
+    "description": "Specify what file to store incremental build information in.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "types": {
+    "cliFlag": "--types",
+    "type": "string[]",
+    "defaultValue": "",
+    "description": "List of names of type definitions to include. See [@types, --typeRoots and --types](./tsconfig.json.md#types-typeroots-and-types) for more details.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "typeRoots": {
+    "cliFlag": "--typeRoots",
+    "type": "string[]",
+    "defaultValue": "",
+    "description": "List of folders to include type definitions from. See [@types, --typeRoots and --types](./tsconfig.json.md#types-typeroots-and-types) for more details.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "version": {
+    "cliFlag": [
+      "--version",
+      "-v"
+    ],
+    "type": "cli operation",
+    "defaultValue": "",
+    "description": "Print the compiler's version.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  },
+  "watch": {
+    "cliFlag": [
+      "--watch",
+      "-w"
+    ],
+    "type": "cli operation",
+    "defaultValue": "",
+    "description": "Run the compiler in watch mode. Watch input files and trigger recompilation on changes. The implementation of watching files and directories can be configured using environment variable. See [configuring watch](./Configuring%20Watch.md) for more details.",
+    "experimental": false,
+    "extendedDescription": "",
+    "refLinks": [
+      {
+        "title": "",
+        "link": ""
+      },
+      {
+        "title": "",
+        "link": ""
+      }
+    ]
+  }
+}

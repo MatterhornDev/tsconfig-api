@@ -48,6 +48,10 @@ rl.on('line', line => {
     experimental,
     configOnly
   }
+
+  if ( option === 'module' ) {
+    data[option].defaultValue = `"commonjs"`
+  }
 })
 
 rl.on('close', () => {

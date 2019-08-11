@@ -1,2 +1,5 @@
 node_modules
 data/createData.js
+.vscode/
+yarn*
+_*
