@@ -15,7 +15,7 @@
   "author": "Ethan Arrowood",
   "license": "MIT",
   "dependencies": {
-    "@types/node": "^12.0.8",
+    "@types/node": "^15.12.4",
     "typescript": "^3.5.1"
   }
 }
